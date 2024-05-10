@@ -1,0 +1,96 @@
+html {
+    font-family: "DM Sans", sans-serif;
+}
+body {
+   margin: 0;
+}
+
+header {
+  background-image: url('../Ej1/imagen/Joystick.png');  
+  background-size: cover;
+  background-position: center;
+  color: white; /* texto */
+  padding: 30px;
+  text-align: center;
+}
+
+.subtitulo {
+ color: #C9CACC;
+ font-size: 25px;
+}
+
+.destacado {
+    color: red;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.Beneficios{
+ padding: 40px;
+ background-color: white;
+ color: #161616;  
+}
+
+.Titulo-Bullets{
+ text-align: center;
+ font-size: 25px;
+ margin-bottom: 20px;
+ color: white;
+} 
+
+.Tarjeta {
+    text-align: center;
+    padding: 40px;
+    margin: 10px ;
+}
+
+.Tarjeta img {
+  display: block;
+  margin: 0 auto;
+}
+
+.Contenedor-Tarjetas {
+    background-color: #161616;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+   
+.Comunidad{
+ padding: 40px;
+ background-color: white;
+ color: #161616;
+}
+
+.collage { /* collage */
+ width: 600px ;
+}
+
+ .Formulario{
+    background-image: url('../Ej1/imagen/Joystick.png');  
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px;
+} 
+
+footer {
+ background-color: #161616;
+ color: white; 
+ padding: 30px;
+ text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/* @media screen and (max-width: 600px) { ESTO ES PARA HACER RESPONSIVE UN SITIO, EJERCICIO 2 EXPLICA
+    html, body{
+        background-color: #161616;
+    }
+} */ 
