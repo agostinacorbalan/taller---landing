@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./formulario.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <form id="formulario">
+
+     <section>
+        <h1>COMPLETA TUS DATOS</h1>
+        <p>Llena el formulario para tener los mejores beneficios</p>
+        <p>*Indica un campo obligatorio</p>
+     </section>
+
+     <section>
+        <label for="nombre">Nombre*</label>
+        <input type="nombre" name="nombre" id="nombre" placeholder="Escribe tu nombre" required="">
+        <br>  <!-- es el espacio entre bloques -->
+        <br>
+        <label for="email">Correo electronico*</label>
+        <input type="email" name="email" id="email" placeholder="Escribe tu email" required="">
+        <br>  
+        <br>
+     </section>
+
+     <section>
+        <label for="informacion">Quiero recibir informacion de:</label>
+        <select name="informacion" id="informacion">
+          <option value="acción">Acción</option>
+          <option value="deporte">Deporte</option>
+          <option value="aventura">Aventura</option>
+          <option value="multijugador">Multijugador</option>
+        </select>
+        <br>  
+        <br>
+     </section>
+
+        <input type="submit" id="boton-enviar" value="¡ACCEDER!" class="enter">
+
+        <p>Al continuar, aceptas las <span class="destacado">Condiciones de uso y el Aviso de privacidad</span> de LevelUp.</p>
+        <p>© LevelUp. Todos los derechos reservados.</p>
+    </form>
+
+    <section class="feedback oculto" id="feedback">
+        <img class="dardo" src="./imagen/Hecho.png" alt="">
+        <h1>¡BIEN HECHO!</h1>
+        <p><span id="nombre-placeholder"></span>, dentro de los proximos minutos recibirás las ultimas novedades en la casilla de correo: <span id="email-placeholder"></span></p>
+        <!-- <input type="submit" value="Volver" > -->
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
