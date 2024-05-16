@@ -38,3 +38,20 @@ function enviarFormulario(event){
  elemento_formulario = document.getElementById("formulario");
  elemento_formulario.classList.add("oculto");
 }
+ 
+document.getElementById('email').addEventListener('input', function() {
+    localStorage.setItem('email', this.value);
+  });
+  
+  // Limpiar el valor del input al cargar la página
+  window.onload = function() {
+    var storedEmail = localStorage.getItem('email');
+    if (storedEmail) {
+      document.getElementById('email').value = storedEmail;
+    }
+  };
+  
+  // Limpiar el valor del input al cambiar de página
+  window.onunload = function() {
+    localStorage.removeItem('email');
+  };
