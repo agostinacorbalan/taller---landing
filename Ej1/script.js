@@ -39,14 +39,19 @@ function enviarFormulario(event){
  elemento_formulario.classList.add("oculto");
 }
  
+// Guardar el valor del input en localStorage cuando se cambia
 document.getElementById('email').addEventListener('input', function() {
     localStorage.setItem('email', this.value);
   });
   
   // Limpiar el valor del input al cargar la página
   window.onload = function() {
+    // Obtener el valor almacenado en localStorage
     var storedEmail = localStorage.getItem('email');
+    
+    // Verificar si hay un valor almacenado
     if (storedEmail) {
+      // Asignar el valor almacenado al input
       document.getElementById('email').value = storedEmail;
     }
   };
@@ -55,3 +60,4 @@ document.getElementById('email').addEventListener('input', function() {
   window.onunload = function() {
     localStorage.removeItem('email');
   };
+  
