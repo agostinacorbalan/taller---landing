@@ -7,66 +7,92 @@
     <title>Formulario</title>
 </head>
 <body>
+  <header>
+    <div class="logo">
+      <img src="./imagen/logo.png" alt="Logo">
+  </div>
+  </header>
+
     <form id="formulario">
 
-     <section>
+     <section class="izquierdo">
+      <div>
         <h1>COMPLETA TUS DATOS</h1>
         <p>Completa el siguiente formulario para recibir tu guía gratis con todos los trucos y hacks de tu videjuego versus favorito y en la plataforma de preferencia.</p>
         <p><span class="destacado">*Indica un campo obligatorio</span></p>
+      </div>
      </section>
 
+     <section class="derecho">
      <section>
+      <div class="form-campo">
         <label for="nombre">Nombre*</label>
-        <input type="nombre" name="nombre" id="nombre" placeholder="Escribe tu nombre" required="">
-        <br>  <!-- es el espacio entre bloques -->
-        <br>
+        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
+      </div>
+    </section>
+      <section>
+       <div class="form-campo">
         <label for="email">Correo electronico*</label>
-        <input type="email" name="email" id="email" placeholder="Escribe tu email" required="">
-        <br>  
-        <br>
-     </section>
+        <input type="email" name="email" id="email" placeholder="Escribe tu email" required>
+       </div>
+      </section>
 
-     <section>
-        <label for="informacion">Videojuego*:</label>
-        <select name="informacion" id="informacion">
+       <section>
+        <div class="form-campo">
+        <label for="videojuego">Videojuego*:</label>
+        <select name="videojuego" id="videojuego" required>
+          <option value="" disabled selected>-Seleccionar un videojuego-</option>
           <option value="acción">FIFA24</option>
           <option value="deporte">MORTAL KOMBAT 7</option>
           <option value="aventura">STREET FIGHTER V</option>
           <option value="multijugador">DRAGON BALL FIGHTERZ</option>
           <option value="multijugador">INJUSTICE 2</option>
           <option value="multijugador">DRAGON BALL FIGHTERZ</option>
+        </div>
         </select>
-        <br>  
-        <br>
-     </section>
+       </section>
 
-     <section>
-        <label for="plataforma">Consola:</label>
-        <select name="informacion" id="informacion">
+       <section>
+        <div class="form-campo">
+        <label for="plataforma">Consola*:</label>
+        <select name="plataforma" id="plataforma" required>
+          <option value="" disabled selected>-Selecionar una consola-</option>
           <option value="ps4">PLAYS STATION 4</option>
           <option value="ps5">PLAYS STATION 5</option>
-          <option value="nintendo">Nintendo</option>
+          <option value="nintendo">NINTENDO</option>
           <option value="xbox">XBOX</option>
           <option value="aventura">PC</option>
           <option value="ios">IOS</option>
           <option value="android">ANDROID</option>
         </select>
-        <br>  
-        <br>
-     </section>
+        </div>
+       </section>
 
-        <input type="submit" id="boton-enviar" value="CONTINUAR" class="enter">
+        <input type="submit" id="boton-enviar" value="CONTINUAR" class="enter disabled" disabled> 
 
         <p>Al continuar, aceptas las <span class="destacado">Condiciones de uso y el Aviso de privacidad</span> de LevelUp.</p>
-        <p>© LevelUp. Todos los derechos reservados.</p>
+      </section>
     </form>
 
     <section class="feedback oculto" id="feedback">
+      <div class="fondo-fb">
+      <div class="contenido">
         <img class="dardo" src="./imagen/Dardo.jpeg" alt="">
         <h1>¡BIEN HECHO!</h1>
         <p><span id="nombre-placeholder"></span>, en breve recibirás un correo electrónico en tu bandeja de entrada con el PDF descargable de nuestra guía gratuita. Si no lo ves en unos minutos, revisa tu carpeta de spam o promociones del correo: <span id="email-placeholder"></span></p>
-        <input type="submit" value="Volver" >
+        <p><a href="./index.html" class="volver">VOLVER</a></p>
+      </div>
+     </div>
     </section>
+
+    <footer>
+      <p><span class="negrita">Encuentranos en </span></p> 
+      <img class="icon-media" src="imagen/Youtube.png" alt="">
+      <img class="icon-media" src="imagen/Twitter.png" alt="">
+      <img class="icon-media" src="imagen/Facebook.png" alt="">
+      <img class="icon-media" src="imagen/Discord.png" alt="">
+      <p>© LevelUp. Todos los derechos reservados.</p>
+     </footer>
 
     <script src="./script.js"></script>
 </body>

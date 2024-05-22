@@ -3,15 +3,72 @@ html {
 }
 
 body {
- text-align: left;
+    margin: 0; 
+    padding: 0;
 }
 
-form {
-    text-align: center;
-    padding: 10%;
+header {
+    background-color: #161616;
+    padding: 10px 20px;
+    text-align: left;
+ }
+
+ .logo img {
+    max-width: 150px;
+ }
+
+form{
+    display: flex;
+    padding: 0 0;
 }
 
-.enter{
+.izquierdo, .derecho{
+    flex: 1;
+    padding: 60px;
+}
+
+.izquierdo{
+    background-image: url('imagen/fondo-form.png');  
+    background-size: cover;
+    background-position: left;
+    color: white;
+}
+
+.derecho{
+    background-color: white;
+    background-position: right;
+    /* text-align: right; */
+}
+.form-campo {
+    margin-bottom: 15px;
+}
+
+.form-campo label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-campo input, .form-campo select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.enter.disabled{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: grey;
+    font-weight: bold;
+    color: white;
+    text-decoration: none; 
+    border: none; 
+    border-radius: 20px; 
+    font-size: 16px;
+    cursor: not-allowed;
+}
+
+.enter.active{
     display: inline-block;
     padding: 10px 20px;
     background-color: red; 
@@ -24,7 +81,7 @@ form {
     cursor: pointer;
 }
 
-.enter:hover {
+.enter.active:hover {
     background-color: #cc0000;
 }
 
@@ -33,11 +90,29 @@ form {
  color: #161616;
 }
 
+.fondo-fb{
+ background-image: url('imagen/fondo-form.png');
+ background-size: cover;
+ background-position: center;
+ height: 100vh;
+}
+
+.contenido {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 15px;
+    border-radius: 25px;
+    width: 50%; 
+}
+
 .dardo{
     width: 250px;
     display: flex;
     margin-top: 10%;
-    margin-left: 41%;
+    margin-left: 35%;
 }
 
 h1 {
@@ -50,4 +125,36 @@ h1 {
 
 .destacado{
 color: red;
+}
+
+.volver{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white; 
+    font-weight: bold;
+    color: red; 
+    text-decoration:none;
+    border: 2px solid red;
+    border-radius: 20px; 
+    font-size: 16px; 
+    cursor: pointer;
+}
+
+footer {
+    background-color: #161616;
+    color: white; 
+    text-align: center; 
+    padding: 30px 0;
+    justify-content: center; 
+    padding-bottom: 5px;
+   }
+   
+.icon-media{
+    width: 30px;
+    padding: 0 10px;
+   }
+
+
+.negrita {
+    font-weight: bold;
 }
