@@ -3,96 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="./formulario.css">
     <title>Formulario</title>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="./imagen/logo.png" alt="Logo">
-  </div>
-  </header>
+   <header>
+      <nav  class="navbar">
+         <img class="logo" src="imagen/logo.png" alt="Logo de LevelUp">
+           <!-- <ul class="nav-barra">
+               <li><a href="#">Esports</a></li>
+               <li><a href="#">Juegos</a></li>
+               <li><a href="#">Noticias</a></li>
+               <li><a href="#">Articulos</a></li>
+               <li><a href="#">Reviews</a></li>
+               <li><a href="#">LevelUp TV</a></li>
+           </ul> -->
+      </nav>
+   </header>
 
-    <form id="formulario">
-
-     <section class="izquierdo">
-      <div>
-        <h1>COMPLETA TUS DATOS</h1>
+   <form id="formulario">
+      <section class="izquierdo">
+      <div class="contenedor-principal">
+        <h2>COMPLETA TUS DATOS</h2>
         <p>Completa el siguiente formulario para recibir tu guía gratis con todos los trucos y hacks de tu videjuego versus favorito y en la plataforma de preferencia.</p>
-        <p><span class="destacado">*Indica un campo obligatorio</span></p>
+        <p><span class="destacado">* Indica un campo obligatorio</span></p>
       </div>
-     </section>
-
-     <section class="derecho">
-     <section>
-      <div class="form-campo">
-        <label for="nombre">Nombre*</label>
-        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
-      </div>
-    </section>
-      <section>
-       <div class="form-campo">
-        <label for="email">Correo electronico*</label>
-        <input type="email" name="email" id="email" placeholder="Escribe tu email" required>
-       </div>
       </section>
 
-       <section>
-        <div class="form-campo">
-        <label for="videojuego">Videojuego*:</label>
-        <select name="videojuego" id="videojuego" required>
-          <option value="" disabled selected>-Seleccionar un videojuego-</option>
-          <option value="acción">FIFA24</option>
-          <option value="deporte">MORTAL KOMBAT 7</option>
-          <option value="aventura">STREET FIGHTER V</option>
-          <option value="multijugador">DRAGON BALL FIGHTERZ</option>
-          <option value="multijugador">INJUSTICE 2</option>
-          <option value="multijugador">DRAGON BALL FIGHTERZ</option>
-        </div>
-        </select>
-       </section>
-
-       <section>
-        <div class="form-campo">
-        <label for="plataforma">Consola*:</label>
-        <select name="plataforma" id="plataforma" required>
-          <option value="" disabled selected>-Selecionar una consola-</option>
-          <option value="ps4">PLAYS STATION 4</option>
-          <option value="ps5">PLAYS STATION 5</option>
-          <option value="nintendo">NINTENDO</option>
-          <option value="xbox">XBOX</option>
-          <option value="aventura">PC</option>
-          <option value="ios">IOS</option>
-          <option value="android">ANDROID</option>
-        </select>
-        </div>
-       </section>
-
-        <input type="submit" id="boton-enviar" value="CONTINUAR" class="enter disabled" disabled> 
-
-        <p>Al continuar, aceptas las <span class="destacado">Condiciones de uso y el Aviso de privacidad</span> de LevelUp.</p>
+      <section class="derecho">
+         <div class="contenedor-principal">
+            <button type="button" class="boton-cancelar" onclick="irAPaginaInicio()"><img src="imagen/close.png" alt=""></button>
+            <div class="contenedor-camposdelform">
+               <div class="nombre-correo"> <!-- Campo nombre & correo -->
+                  <div class="form-campo"> <!-- Campo nombre -->
+                     <label for="nombre">Nombre<span class="obligatorio">*</span></label>
+                     <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
+                  </div>
+                  <div class="form-campo"> <!-- Campo correo -->
+                     <label for="email">Correo electronico<span class="obligatorio">*</span></label>
+                     <input type="email" name="email" id="email" placeholder="Escribe tu email" required>
+                  </div>
+               </div>
+               <div class="form-campo"> <!-- Campo seleccionar videojuego -->
+                  <label for="videojuego">Videojuego:<span class="obligatorio">*</span></label>
+                  <select name="videojuego" id="videojuego" required>
+                  <option value="" disabled selected>-Seleccionar un videojuego-</option>
+                  <option value="acción" class="opcion-lista">FIFA24</option>
+                  <option value="deporte" class="opcion-lista">MORTAL KOMBAT 7</option>
+                  <option value="aventura" > <p class="opcion-lista">STREET FIGHTER V</p></option>
+                  <option value="multijugador" class="opcion-lista">DRAGON BALL FIGHTERZ</option>
+                  <option value="multijugador" class="opcion-lista">INJUSTICE 2</option>
+                  <option value="multijugador" class="opcion-lista">DRAGON BALL FIGHTERZ</option>
+                  </select>
+               </div>
+               <div class="form-campo"> <!-- Campo seleccionar consola -->
+                  <label for="plataforma">Consola:<span class="obligatorio">*</span></label>
+                  <select name="plataforma" id="plataforma" required>
+                  <option value="" disabled selected>-Selecionar una consola-</option>
+                  <option value="ps4" class="opcion-lista">PLAYS STATION 4</option>
+                  <option value="ps5" class="opcion-lista">PLAYS STATION 5</option>
+                  <option value="nintendo" class="opcion-lista">NINTENDO</option>
+                  <option value="xbox" class="opcion-lista">XBOX</option>
+                  <option value="aventura" class="opcion-lista">PC</option>
+                  <option value="ios" class="opcion-lista">IOS</option>
+                  <option value="android" class="opcion-lista">ANDROID</option>
+                  </select>
+               </div>
+            </div>
+            <div class="cont-botonyderechos">
+               <input type="submit" id="boton-enviar" value="CONTINUAR" class="enter" disabled> 
+               <p>Al continuar, aceptas las <span class="destacado">Condiciones de uso y el Aviso de privacidad</span> de LevelUp.</p>
+            </div>
+         </div>
       </section>
-    </form>
+   </form>
 
     <section class="feedback oculto" id="feedback">
       <div class="fondo-fb">
-      <div class="contenido">
-        <img class="dardo" src="./imagen/Dardo.jpeg" alt="">
-        <h1>¡BIEN HECHO!</h1>
-        <p><span id="nombre-placeholder"></span>, en breve recibirás un correo electrónico en tu bandeja de entrada con el PDF descargable de nuestra guía gratuita. Si no lo ves en unos minutos, revisa tu carpeta de spam o promociones del correo: <span id="email-placeholder"></span></p>
-        <p><a href="./index.html" class="volver">VOLVER</a></p>
-      </div>
+         <div class="contenido">
+            <img class="dardo" src="./imagen/Dardo.jpeg" alt="">
+            <h1>¡BIEN HECHO!</h1>
+            <p><span id="nombre-placeholder"></span>, en breve recibirás un correo electrónico en tu bandeja de entrada con el PDF descargable de nuestra guía gratuita. Si no lo ves en unos minutos, revisa tu carpeta de spam o promociones del correo: <span id="email-placeholder"></span></p>
+            <p><a href="./index.html" class="volver">VOLVER</a></p>
+         </div>
      </div>
     </section>
 
     <footer>
-      <p><span class="negrita">Encuentranos en </span></p> 
-      <img class="icon-media" src="imagen/Youtube.png" alt="">
-      <img class="icon-media" src="imagen/Twitter.png" alt="">
-      <img class="icon-media" src="imagen/Facebook.png" alt="">
-      <img class="icon-media" src="imagen/Discord.png" alt="">
+      <div class="medios">
+         <p><span class="negrita">Encuentranos en </span></p> 
+         <div class="icons">
+            <img class="icon-media" src="imagen/Youtube1.png" alt="">
+            <img class="icon-media" src="imagen/Twitter1.png" alt="">
+            <img class="icon-media" src="imagen/Facebook1.png" alt="">
+            <img class="icon-media" src="imagen/Discord1.png" alt="">
+         </div>
+      </div>
       <p>© LevelUp. Todos los derechos reservados.</p>
-     </footer>
+    </footer>
 
     <script src="./script.js"></script>
 </body>

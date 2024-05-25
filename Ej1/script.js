@@ -67,3 +67,7 @@ window.onunload = function() {
  localStorage.removeItem('email');
 };
   
+function irAPaginaInicio() {
+    window.location.href = 'index.html'; // Reemplaza con la URL de tu página de inicio
+}
+  
