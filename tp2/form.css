@@ -1,0 +1,66 @@
+html{
+    font-family: "DM Sans", sans-serif;
+    background-color: #161616;
+    color: white;
+}
+
+h1, h2, h3{
+    font-family: "Roboto Condensed", sans-serif;    
+    font-weight: bold;    
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    max-width: 120px;
+}
+
+.destacado{
+    color: #FFA629;
+    font-size: 15px;
+    }
+
+form{
+        display: flex;
+        padding: 0 0;
+    }
+    
+.izquierdo, .derecho{
+        flex: 1;
+        margin: 0;
+    }  
+
+/*Boton "registrar */
+    .enter.disabled{
+        background-color: grey;
+        cursor: not-allowed;
+    }
+    
+    .enter.active{
+        background-color: #FFA629;
+        cursor: pointer;
+    }
+    
+    .enter.active:hover {
+        background-color: #e68c0d;
+    }
+
+    .cont-boton p{
+        font-size: 12px;
+        color: #515151;
+        position: relative; /* Para poder posicionar el pseudo-elemento */
+    }
+
+    .boton-cancelar{
+        margin-left: 900px;
+        padding: 0;
+        background-color: #161616;
+        border: none;
+        cursor: pointer;
+    }
+
+    .boton-cancelar img{
+        width: 40%;
+        height: 40%;
+    }
+    

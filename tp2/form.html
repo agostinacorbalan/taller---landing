@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <title>Form</title>
+</head>
+<body>
+    <header>
+        <nav  class="navbar">
+           <img class="logo" src="imagen/logo.png" alt="Logo de La Cosa Cine">
+           <p>¿Eres miembro?<span class="destacado"> Iniciar sesión</span></p>
+           </nav>
+        </header> 
+
+    <form id="formulario">
+     <section class="izquierdo">
+        <div class="contenedor">
+         <h2>Beneficios de tener una cuenta registrada</h2>
+         <div class="beneficios">
+         <h4>Recomendaciones personalizadas:</h4>
+         <p>Rastrea tus gustos y verás recomendaciones personalizadas en la sección "Para ti" en la página principal.</p>
+         <h4>Lista de seguimiento:</h4>
+         <p>Recibe notificaciones y crea listas sobre tus categorías favoritas.</p>
+         <h4>Sus valoraciones:</h4>
+         <p>Puntúa las publicaciones y deja comentarios. Tus valoraciones se reflejarán en futuras recomendaciones.</p>
+         <h4>Contribuir a La Cosa Cine:</h4>
+         <p>Añade datos que serán vistos por millones de personas.</p>
+        </div>
+       </div>
+     </section>
+
+     <section class="derecho">
+        <div class="contenedor">
+            <button type="button" class="boton-cancelar" onclick="irAPaginaInicio()"><img src="imagen/close.png" alt=""></button>
+            <div class="contenedor-camposdelform">
+                <div class="campos-de-texto"> <!-- Todos los campos de texto -->
+                   <div class="form-campo"> <!-- Campo nombre -->
+                      <label for="nombre">Nombre<span class="obligatorio">*</span></label>
+                      <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
+                   </div>
+                   <div class="form-campo"> <!-- Campo contraseña -->
+                    <label for="contraseña">Contraseña<span class="obligatorio">*</span></label>
+                    <input type="text" name="contraseña" id="contraseña" placeholder="Escribe tu contraseña" required>
+                 </div>
+                 <div class="form-campo"> <!-- Campo repetir -->
+                    <label for="repetir">Repite tu contraseña<span class="obligatorio">*</span></label>
+                    <input type="text" name="repetir" id="repetir" placeholder="Repetir tu contraseña" required>
+                 </div>
+                 <div class="form-campo"> <!-- Campo correo -->
+                    <label for="email">Correo electronico<span class="obligatorio">*</span></label>
+                    <input type="email" name="email" id="email" placeholder="Escribe tu email" required>
+                 </div>
+                </div>
+            </div>
+            <div class="cont-boton">
+                <input type="submit" id="boton-enviar" value="REGISTRARME" class="enter" disabled> 
+             </div>
+             <p>Al continuar, aceptas las <span class="destacado">Condiciones de uso y el Aviso de privacidad</span> de La Cosa Cine.</p>
+        </div>
+     </section>
+    </form>
+
+
+    <footer>
+        <p>©La Cosa Cine 2024. Todos los derechos reservados.</p>
+      </footer>
+  
+      <script src="./script.js"></script>
+</body>
+</html>

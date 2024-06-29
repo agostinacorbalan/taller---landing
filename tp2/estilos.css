@@ -1,0 +1,135 @@
+html{
+    scroll-behavior: smooth; 
+    margin: 0; padding: 0;
+    background-color: #161616;
+    color: white;
+}
+
+.logo {
+    max-width: 140px;
+}
+
+.nav-barra {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: white;
+} 
+
+.iniciar{
+    color: white;
+    background-color: #FFA629;
+    font-weight: bold;
+    border-radius: 60px;
+    text-align: center;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropbtn {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+/* Fin */
+
+/* Estilos para el carrusel - */
+.contenedor-carrusel {
+    display: flex;
+    overflow: hidden; /* Oculta los slides que están fuera de la vista */
+    width: 100%;
+}
+
+.slide-content {
+    flex: 0 0 100%; /* Cada slide ocupa el 100% del ancho */
+    transition: transform 0.5s ease; /* Transición suave para el cambio de slides */
+}
+
+.slide-content img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del slide */
+}
+
+/* Estilos para los controles */
+.controles {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.controles button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.controles button:hover {
+    background-color: #555;
+}
+
+/* FIN */
+
+.boton-amarillo{
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: #FFA629; 
+    font-weight: bold;
+    color: #F1F1F1;
+    text-decoration: none; /* Eliminar subrayado del enlace */
+    border: none; 
+    border-radius: 60px; /* Bordes redondeados */
+    font-size: 23px;     
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.destacado{
+color: #FFA629;
+font-size: 15px;
+}
+
+.medios h3 {
+    font-size: 30px;
+}
+
+.icons {
+    display: flex;
+}
+
+.icon-media {
+    width: 40px;
+    margin-left: 45px;
+    height: auto; /* Mantener la proporción */
+}
