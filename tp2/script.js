@@ -41,33 +41,3 @@ window.onload = function() {
 window.onunload = function() {
  localStorage.removeItem('email');
 };
-
-// Funciones y variables para el carrusel - NO FUNCIONA
-document.addEventListener("DOMContentLoaded", function() {
-    const slides = document.querySelectorAll(".slide-content");
-    const prevBtn = document.querySelector(".anterior");
-    const nextBtn = document.querySelector(".siguiente");
-    let currentSlide = 0;
-
-    slides[currentSlide].classList.add("active");
-
-    function showSlide() {
-        slides.forEach((slide, index) => {
-            if (index === currentSlide) {
-                slide.classList.add("active");
-            } else {
-                slide.classList.remove("active");
-            }
-        });
-    }
-
-    nextBtn.addEventListener("click", function() {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide();
-    });
-
-    prevBtn.addEventListener("click", function() {
-        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-        showSlide();
-    });
-});

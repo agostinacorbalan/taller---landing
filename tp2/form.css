@@ -18,17 +18,18 @@ h1, h2, h3, h4{
 p{ 
     font-family: "DM Sans", sans-serif;    
     margin: 0;
-    padding: 10px;
 }
 
 .logo{
     max-width: 120px;
 }
+
 header{
     background-color: #161616;
     padding: 10px 30px;
     margin: 0;
 }
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -45,14 +46,21 @@ form{
         padding: 0 0;
     }
     
-.izquierdo, .derecho{
+    main.contenedor {
+        display: flex;
+    }
+
+    .izquierdo {
         flex: 1;
+        padding: 45px;
         margin: 0;
-    }  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     .izquierdo .contenedor{
-        text-align: left;
-        margin: 30px 100px;
+        margin-left: 100px;
     }
     
     .izquierdo .contenedor h2{
@@ -66,12 +74,11 @@ form{
     }
     
     .derecho .contenedor{
-        padding: 0;
-        margin: 0;
-    }
-    
-    .contenedor-camposdelform{    
-        margin-top: 35px;
+        padding: 30px;
+        margin: 30px;
+        max-width: 600px;
+        width: 100%;
+        margin-left: 20px;
     }
 
     .boton-cancelar img {
@@ -92,7 +99,7 @@ form{
     }
 
     #nombre {
-        width: 340px;
+        width: 450px;
         padding: 13px 20px;
         border: 0.8px solid white;
         background-color: #272727;
@@ -104,7 +111,7 @@ form{
     }
 
     #contraseña {
-        width: 340px;
+        width: 450px;
         padding: 13px 20px;
         border: 0.8px solid white;
         background-color: #272727;
@@ -112,12 +119,12 @@ form{
         font-size: 15px;
         font-family: "DM Sans", sans-serif;
         margin-bottom: 30px;
-        margin-top: 30px;
+        margin-top: 5px;
 
     }
     
     #repetir {
-        width: 340px;
+        width: 450px;
         padding: 13px 20px;
         border: 0.8px solid white;
         background-color: #272727;
@@ -125,13 +132,12 @@ form{
         font-size: 15px;
         font-family: "DM Sans", sans-serif;
         margin-bottom: 30px;
-        margin-top: 30px;
+        margin-top: 5px;
 
     }
     
-    
     #email {
-        width: 340px;
+        width: 450px;
         padding: 13px 20px;
         border: 0.8px solid white;
         background-color: #272727;
@@ -139,7 +145,7 @@ form{
         font-size: 15px;
         font-family: "DM Sans", sans-serif;
         margin-bottom: 30px;
-        margin-top: 30px;
+        margin-top: 5px;
     }
 
     .form-campo label {
@@ -158,7 +164,7 @@ form{
 
     .enter{
         display: inline-block;
-        padding: 12px 35px;
+        padding: 12px 180px;
         font-weight: bold;
         color: white; 
         text-decoration: none; /* Eliminar subrayado del enlace */
@@ -166,7 +172,7 @@ form{
         border-radius: 60px; /* Bordes redondeados */
         font-size: 23px;     
         font-family: "Roboto Condensed", sans-serif;
-        margin-top: 20px;
+        margin-top: 5px;
         margin-bottom: 25px;
     }
 
@@ -191,17 +197,31 @@ form{
         position: relative; /* Para poder posicionar el pseudo-elemento */
     }
 
-    .boton-cancelar{
-        margin-left: 900px;
-        padding: 0;
-        background-color: #161616;
-        border: none;
+    .google-button {
+        background-color: transparent;
+        color: #FFA629;
+        border: 2px solid #FFA629;
+        padding: 12px 95px;
+        border-radius: 60px;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        transition: background-color 0.3s;
+        font-size: 20px;
+    }
+    
+    .google-button:hover {
+        background-color: rgba(255, 166, 41, 0.1); /* Añadir un color de fondo suave al pasar el ratón */
+    }
+    
+    .google{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
     }
 
-    .boton-cancelar img{
-        width: 40%;
-        height: 40%;
+    .condiciones{
+        padding-top: 20px;
     }
 
     footer{

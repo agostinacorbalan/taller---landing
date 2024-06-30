@@ -41,31 +41,34 @@
 
      <section class="derecho">
         <div class="contenedor">
-            <button type="button" class="boton-cancelar" onclick="irAPaginaInicio()"><img src="imagen/close.png" alt=""></button>
             <div class="contenedor-camposdelform">
                 <div class="campos-de-texto"> <!-- Todos los campos de texto -->
                    <div class="form-campo"> <!-- Campo nombre -->
                       <label for="nombre">Nombre<span class="obligatorio">*</span></label>
-                      <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
+                      <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required>
                    </div>
                    <div class="form-campo"> <!-- Campo contraseña -->
                     <label for="contraseña">Contraseña<span class="obligatorio">*</span></label>
-                    <input type="text" name="contraseña" id="contraseña" placeholder="Escribe tu contraseña" required>
+                    <input type="text" name="contraseña" id="contraseña" placeholder="xxxxxxxx" required>
                  </div>
                  <div class="form-campo"> <!-- Campo repetir -->
                     <label for="repetir">Repite contraseña<span class="obligatorio">*</span></label>
-                    <input type="text" name="repetir" id="repetir" placeholder="Repetir tu contraseña" required>
+                    <input type="text" name="repetir" id="repetir" placeholder="xxxxxxxx" required>
                  </div>
                  <div class="form-campo"> <!-- Campo correo -->
                     <label for="email">Email<span class="obligatorio">*</span></label>
-                    <input type="email" name="email" id="email" placeholder="Escribe tu email" required>
+                    <input type="email" name="email" id="email" placeholder="tunombre@gmail.com" required>
                  </div>
                 </div>
             </div>
             <div class="cont-boton">
-                <input type="submit" id="boton-enviar" value="REGISTRARME" class="enter" disabled> 
+                <input type="submit" id="boton-enviar" value="REGISTRARSE" class="enter" disabled> 
              </div>
-             <p>Al continuar, aceptas las <span class="destacado">Condiciones de uso y el Aviso de privacidad</span> de La Cosa Cine.</p>
+             <button id="google-button" class="google-button">
+               <img src="./imagen/google.png" alt="Google" class="google">
+               REGISTRATE CON GOOGLE
+             </button>
+             <p class="condiciones">Al continuar, aceptas las <span class="destacado">Condiciones de uso y el Aviso de privacidad</span> de La Cosa Cine.</p>
         </div>
      </section>
     </form>
