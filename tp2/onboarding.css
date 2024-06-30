@@ -81,6 +81,7 @@ main.contenedor {
 }
 
 #boton-proximo {
+    margin-left: 470px;
     background-color: grey;
     color: #333;
     border: none;
