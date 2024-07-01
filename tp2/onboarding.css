@@ -77,11 +77,11 @@ main.contenedor {
 .contenido-derecho {
     max-width: 600px;
     width: 100%;
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
 .categorias {
-    margin: 30px 0;
+    margin: 5px 0;
 }
 
 .opciones {
@@ -123,6 +123,6 @@ main.contenedor {
 footer {
     background-color: #3d3d3d;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     margin: 0;
 }
