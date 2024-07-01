@@ -197,6 +197,16 @@ form{
         position: relative; /* Para poder posicionar el pseudo-elemento */
     }
 
+    .condiciones :after {
+        content: '';
+        position: absolute;
+        right: 170px;
+        top: 770px; /* Ajusta esta propiedad para espaciar la línea */
+        width: 80%;
+        height: 1.5px; /* Grosor de la línea */
+        background-color: #FFA629; /* Color de la línea */
+    }
+
     .google-button {
         background-color: transparent;
         color: #FFA629;
@@ -221,7 +231,8 @@ form{
     }
 
     .condiciones{
-        padding-top: 20px;
+        padding-top: 70px;
+        margin-right: 100px;
     }
 
     footer{
