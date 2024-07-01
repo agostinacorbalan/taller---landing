@@ -1,4 +1,18 @@
-// Funciones y variables para el formulario
+document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelectorAll(".slide");
+    const slideContainer = document.querySelector(".slides");
+    let currentSlide = 0;
+    const slideWidth = slides[0].clientWidth;
+  
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      slideContainer.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
+    }
+  
+    setInterval(nextSlide, 5000); // Cambia la imagen cada 5 segundos (5000 milisegundos)
+  });
+  
+  // Funciones y variables para el formulario
 var input_nombre = document.getElementById("nombre");
 var input_email = document.getElementById("email");
 var input_contraseña = document.getElementById("contraseña");

@@ -1,0 +1,535 @@
+html{
+    scroll-behavior: smooth; 
+    margin: 0; padding: 0;
+    background-color: #161616;
+    color: white;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/* header  */ 
+header {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    background-color: rgba(22, 22, 22, 1);
+    align-items: center; 
+    text-align: left;
+    padding: 15px 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: medium;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.nav-barra {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-barra li {
+    list-style-type: none;
+    position: relative;
+    font-size: 18px;
+    margin-right: 30px;
+}
+
+.nav-barra li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-barra li a:hover {
+    color: rgba(232, 152, 39, 1);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(41, 41, 41);
+    min-width: 160px;
+    font-size: 16px;
+    padding: 0 10px;
+    z-index: 3; 
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: block;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+.dropdown-content a:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    color: rgba(232, 152, 39, 1);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav-otros {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 30px;
+    height: 40px;
+    align-self: center;
+}
+
+.nav-otros li {
+    position: relative;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.nav-otros li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-otros li a:hover {
+    color: rgba(232, 152, 39, 1);
+}
+
+.nav-otros li img {
+    width: 20px;
+    height: auto;
+    align-items: center;
+}
+
+.nav-otros .dropdown-content {
+    min-width: 120px;
+    font-size: 16px;
+    padding: 0 10px;
+    z-index: 3; 
+}
+
+.barra-buscar {
+    display: flex;
+    align-items: center;
+    background-color: rgba(62, 62, 62, 1);
+    border-radius: 20px;
+    border: 0.5px solid rgba(136, 136, 136, 1);
+    padding: 10px 20px;
+    margin-right: 20px;
+}
+
+.barra-buscar img {
+    width: 20px;
+    height: auto;
+}
+
+.barra-buscar input[type="text"] {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background-color: rgba(62, 62, 62, 1);
+    color: white;
+    padding-left: 10px;
+}
+
+.nav-otros .lista-seguimiento {
+    display: flex;
+    align-items: center; 
+    margin-right: 30px;
+}
+
+.nav-otros .lista-seguimiento img {
+    width: 15px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.nav-otros .lista-seguimiento a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-otros .lista-seguimiento a:hover {
+    color: rgba(232, 152, 39, 1);
+}
+/* comienza la nota */
+
+
+
+.portada {   /* Imagen de portada */
+    position: relative;
+    
+}
+
+.portada img {
+    width: 100%;
+    display: block; 
+}
+
+.portada h1 {
+    position: absolute;
+    bottom: 100px; 
+    left: 50%;
+    transform: translateX(-50%); /* Centra el texto horizontalmente */
+    color: white;
+    white-space: nowrap;
+    font-size: 50px;
+   
+}
+
+
+.centro{
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+.tam{ /* tamaño de la img de la noticia */
+    max-width: 720px;
+}
+
+.intermedio{
+    margin-top: 20px;
+    display: grid;
+    
+}
+
+.flex { 
+    display: flex;
+    color: #FFA629;
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+    align-items: center;
+}
+
+.line {
+    height: 0.1px; 
+    width: calc(100% - 28px); 
+    border: none;
+    background-color: #757575; 
+    margin: -8px 0; 
+}
+
+.noticia h1{
+    font-size: 38px;
+    color: rgba(255, 255, 255, 0.947);
+}
+
+.noticia p{
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.5;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+
+.Puntuacion{
+    display: flex;
+    align-items: center;
+    gap: 75px;
+    margin-bottom: 30px;
+}
+
+
+.bajonota{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bajonota img{
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.bajonota2{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.estrella {
+    width: 20px; /* Ajusta el tamaño según tus necesidades */
+    cursor: pointer;
+}
+
+.bajonota3{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.autora{
+  display: flex;
+  border: 1px solid #3E3E3E;
+  border-radius: 10px;
+  padding: 20px;
+  
+}
+
+.autora img{
+    max-width: 150px;
+    max-height: 150px;
+  
+}
+
+.columna{ /*  noticia */
+    display: grid;
+    list-style: none;
+    padding: 0; 
+    margin: 10px; 
+    gap: 1px;
+}
+
+.columna h4{
+    margin: 0;
+    font-size: 20px;
+}
+
+.columna p{
+    margin: 0;
+    font-size: 17px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+/* navegacion del costado de la pantalla */
+
+.costado{
+    margin-top: 30px;
+}
+
+.listadeseguimiento {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    background-color: #FFA629;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 1px;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.listadeseguimiento:active {
+    background-color: #3E3E3E;
+
+}
+
+.listadeseguimiento img{
+max-width: 30px;
+max-height:40px;
+margin: 5px;
+
+}
+
+.listadeseguimiento h5{
+    margin: 5px;
+    font-size: 18px;
+}
+
+.listadeseguimiento p{
+    margin: 0;
+    padding-left: 5px; 
+    font-size: small;
+}
+
+.textodelista{
+    display: grid;
+}
+
+.Recomendados{
+margin-top: 50px;
+
+}
+
+.Recomendados h4{
+  font-size: 25px;
+}
+
+.linea {
+    height: 0.1px; 
+    /* width: calc(100% - 28px);  */
+    width: 400px;
+    border: none;
+    background-color: #757575; 
+    margin-top: -40px;
+    position: absolute; 
+}
+
+.textrecomendados{
+    display: grid;
+    margin: 50px;
+    line-height: 0;
+    margin-left: 5px;
+   
+}
+
+.titulo{
+    line-height: 1.5; 
+    
+    margin-top: -50px;
+}
+
+.subtitulo{
+    color: #FFA629;
+    font-size: 14px;
+    margin-bottom: 17px;
+    margin-top: -2px;
+}
+
+.fecha{
+    font-size: 12px;
+}
+   
+
+.tepuedegustar{
+    display: flex;
+   
+}
+ 
+.tepuedegustar img {
+    max-width: 210px; 
+   max-height: 110px;
+}
+
+
+/* encuesta */
+
+.encuesta{
+    background-color: #101010;
+    color: white;
+    padding: 20px;
+    padding-left: 30px; 
+                                 
+}
+
+.encuesta li{
+    list-style-type: none;
+}
+
+.tituloencuesta {
+    font-size: 25px;
+    position: relative; /* Necesario para posicionar el pseudo-elemento correctamente */
+    padding-left: 15px; /* Espacio para la línea */
+}
+  
+.tituloencuesta::before {
+    content: '';
+    position: absolute;
+    left: 0; /* Alinea la línea con el borde izquierdo del contenedor */
+    top: 0;
+    bottom: 0;
+    width: 2px; /* Ancho de la línea */
+    background-color: #FFA629; /* Color de la línea */
+}
+
+.encuesta p{
+    font-size: 20px;
+}
+
+.botonvotar{
+    display: inline-block;
+    width: 330px;
+    border: none;
+    padding: 0.3em;
+    font-size: 1em;
+    color: white;
+    margin: 1em 0; 
+    border-radius: 1em;
+    text-align: center;
+    
+    margin-top: 0.3em;
+    text-decoration: none;
+    
+    transition: background-color 0.3s;
+  /*   background: linear-gradient(#c51414, #c51f1fa0); */ /* Degradado lineal de claro a oscuro */
+  background:#FFA629;
+  cursor: pointer;
+}
+
+.botonvotar:active {
+    background: #ffa6294a; /* Color ligeramente más oscuro para dar la sensación de estar presionado */
+}
+
+/* footer */
+
+footer {
+    background-color: #333333;
+    padding: 60px;
+    position: relative; /* Asegura que el contenedor del footer tenga una posición relativa */
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+    margin: 0;
+}
+
+.ordenarfooter {
+    display: flex;
+    gap: 160px; 
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si el espacio es insuficiente */
+    align-items: center;
+    box-sizing: border-box; 
+    margin-bottom: 50px;
+}
+
+.tamlogo {
+    max-width: 250px;
+    max-height: 100px;
+}
+
+
+.mediofooter{
+margin-right: 200px;
+align-items: center;
+}
+
+
+.redes img {
+    max-width: 30px;
+    max-height: 30px;
+    gap: 15px;
+    align-items: center;
+}
+
+.moverredes{
+    margin-left: 20px;
+}
+
+.finalfooter {
+    background-color: #5F5F5F;
+    color: rgba(255, 255, 255, 0.5); 
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    position: absolute; 
+    bottom: 0;
+    left: 0; 
+    box-sizing: border-box;
+   
+}
+
