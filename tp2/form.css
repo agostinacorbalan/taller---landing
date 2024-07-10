@@ -197,6 +197,10 @@ form{
         position: relative; /* Para poder posicionar el pseudo-elemento */
     }
 
+    .redes-registro{
+        display: flex;
+    }
+
     .condiciones :after {
         content: '';
         position: absolute;
@@ -207,24 +211,25 @@ form{
         background-color: #FFA629; /* Color de la línea */
     }
 
-    .google-button {
+    .google-button, .facebook-button {
         background-color: transparent;
         color: #FFA629;
         border: 2px solid #FFA629;
-        padding: 12px 95px;
+        padding: 10px;
+        margin: 2px;
         border-radius: 60px;
         cursor: pointer;
         display: flex;
         align-items: center;
         transition: background-color 0.3s;
-        font-size: 20px;
+        font-size: 13px;
     }
     
-    .google-button:hover {
+    .google-button:hover,  .facebook-button:hover{
         background-color: rgba(255, 166, 41, 0.1); /* Añadir un color de fondo suave al pasar el ratón */
     }
     
-    .google{
+    .google, .facebook{
         width: 20px;
         height: 20px;
         margin-right: 10px;

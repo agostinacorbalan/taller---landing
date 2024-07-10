@@ -49,42 +49,124 @@
         localStorage.removeItem('ultimaPuntuacion');
     };
    
-    /* BOTON LISTA DE SEGUIMIENTO */
+/* BOTON LISTA DE SEGUIMIENTO */
+/* BOTON LISTA DE SEGUIMIENTO */
 
-    document.addEventListener('DOMContentLoaded', function() {
-        var listaSeguimiento = document.getElementById('listadeseguimiento');
-        var textoLista = document.getElementById('textodelista');
-        var logoLista = document.getElementById('logoLista');
+// JavaScript para mostrar/ocultar el menú desplegable
+const textodelista = document.getElementById('textodelista');
+const dropdownMenu = document.getElementById('dropdownMenu');
+
+textodelista.addEventListener('click', function() {
+    dropdownMenu.style.display = dropdownMenu.style.display === 'none' ? 'block' : 'none';
+});
+
+// Mostrar popup
+function showPopup() {
+    var popup = document.getElementById('popup');
+    popup.style.display = 'block';
+}
+
+// Cerrar popup
+function closePopup() {
+    var popup = document.getElementById('popup');
+    popup.style.display = 'none';
+}
+
+// Procesar formulario de nueva lista
+document.getElementById('newListForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evitar envío del formulario por defecto
+
+    // Obtener valores del formulario
+    var listName = document.getElementById('listName').value;
+    var listDescription = document.getElementById('listDescription').value;
+
+    // Aquí puedes procesar los datos, por ejemplo, enviarlos a tu backend o hacer lo que necesites
+    console.log('Nombre de lista:', listName);
+    console.log('Descripción:', listDescription);
+
+    // Mostrar feedback
+    mostrarFeedback();
+
+    // Cambiar el botón después de añadir
+    cambiarBoton();
+
+    // Cerrar el popup después de procesar
+    closePopup();
+});
+
+// Función para mostrar el feedback
+function mostrarFeedback() {
+    var feedback = document.getElementById('feedback');
+    feedback.classList.remove('oculto');
+
+    // Ocultar feedback después de 4 segundos
+    setTimeout(function() {
+        feedback.classList.add('oculto');
+    }, 4000);
+}
+
+// Función para cambiar el estilo y texto del botón
+function cambiarBoton() {
+    var addToListButton = document.getElementById('addToListButton');
+    addToListButton.classList.remove('listadeseguimiento');
+    addToListButton.classList.add('btn-grey');
+    addToListButton.querySelector('h5').textContent = '¡AÑADIDO A LA LISTA!';
+}
+
+// Obtén los elementos del formulario y el botón
+var listNameInput = document.getElementById('listName');
+var crearListaBtn = document.getElementById('crearListaBtn');
+
+// Escucha cambios en el input del nombre de la lista
+listNameInput.addEventListener('input', toggleButton);
+
+// Función para activar/desactivar el botón basado en el nombre de la lista
+function toggleButton() {
+    if (listNameInput.value.trim() !== '') {
+        crearListaBtn.classList.remove('btn-disabled');
+        crearListaBtn.classList.add('btn-enabled');
+    } else {
+        crearListaBtn.classList.remove('btn-enabled');
+        crearListaBtn.classList.add('btn-disabled');
+    }
+}
+
+
+
+   // document.addEventListener('DOMContentLoaded', function() {
+    //     var listaSeguimiento = document.getElementById('listadeseguimiento');
+    //     var textoLista = document.getElementById('textodelista');
+    //     var logoLista = document.getElementById('logoLista');
     
-        listaSeguimiento.addEventListener('click', function() {
-            listaSeguimiento.classList.toggle('active');
-            if (listaSeguimiento.classList.contains('active')) {
-                textoLista.innerHTML = '<h5>¡SE HA AÑADIDO A LA LISTA CON ÉXITO!</h5><p>Puedes encontrarla en tu lista de seguimiento</p>';
-                logoLista.src = 'imagen/tick.png'; // Cambia la imagen
-                localStorage.setItem('listaSeguimientoActiva', 'true');
-                listaSeguimiento.style.backgroundColor = '#3E3E3E';
-            } else {
-                textoLista.innerHTML = '<h5>AÑADIR A LA LISTA DE SEGUIMIENTO</h5><p>Añadido por 5mil usuarios</p>';
-                logoLista.src = 'imagen/listalogo.png'; // Cambia la imagen de vuelta al logo original
-                localStorage.setItem('listaSeguimientoActiva', 'false');
-                listaSeguimiento.style.backgroundColor = '#FFA629'; 
-            }
-        }); 
+    //     listaSeguimiento.addEventListener('click', function() {
+    //         listaSeguimiento.classList.toggle('active');
+    //         if (listaSeguimiento.classList.contains('active')) {
+    //             textoLista.innerHTML = '<h5>¡SE HA AÑADIDO A LA LISTA CON ÉXITO!</h5>';
+    //             logoLista.src = 'imagen/tick.png'; // Cambia la imagen
+    //             localStorage.setItem('listaSeguimientoActiva', 'true');
+    //             listaSeguimiento.style.backgroundColor = '#3E3E3E';
+    //         } else {
+    //             textoLista.innerHTML = '<h5>AÑADIR A LA LISTA DE SEGUIMIENTO</h5>';
+    //             logoLista.src = 'imagen/listalogo.png'; // Cambia la imagen de vuelta al logo original
+    //             localStorage.setItem('listaSeguimientoActiva', 'false');
+    //             listaSeguimiento.style.backgroundColor = '#FFA629'; 
+    //         }
+    //     }); 
     
         // Mantener el estado al recargar la página
-        var listaSeguimientoActiva = localStorage.getItem('listaSeguimientoActiva');
-        if (listaSeguimientoActiva === 'true') {
-            listaSeguimiento.classList.add('active');
-            textoLista.innerHTML = '<h5>¡SE HA AÑADIDO A LA LISTA CON ÉXITO!</h5><p>Puedes encontrarla en tu lista de seguimiento</p>';
-            logoLista.src = 'imagen/tick.png'; // Cambia la imagen
-            listaSeguimiento.style.backgroundColor = '#3E3E3E';
-        } else {
-            listaSeguimiento.classList.remove('active');
-            textoLista.innerHTML = '<h5>AÑADIR A LA LISTA DE SEGUIMIENTO</h5><p>Añadido por 5mil usuarios</p>';
-            logoLista.src = 'imagen/listalogo.png'; // Cambia la imagen de vuelta al logo original
-            listaSeguimiento.style.backgroundColor = '#FFA629'; 
-        }
-    });
+    //     var listaSeguimientoActiva = localStorage.getItem('listaSeguimientoActiva');
+    //     if (listaSeguimientoActiva === 'true') {
+    //         listaSeguimiento.classList.add('active');
+    //         textoLista.innerHTML = '<h5>¡SE HA AÑADIDO A LA LISTA CON ÉXITO!';
+    //         logoLista.src = 'imagen/tick.png'; // Cambia la imagen
+    //         listaSeguimiento.style.backgroundColor = '#3E3E3E';
+    //     } else {
+    //         listaSeguimiento.classList.remove('active');
+    //         textoLista.innerHTML = '<h5>AÑADIR A LA LISTA DE SEGUIMIENTO</h5>';
+    //         logoLista.src = 'imagen/listalogo.png'; // Cambia la imagen de vuelta al logo original
+    //         listaSeguimiento.style.backgroundColor = '#FFA629'; 
+    //     }
+    // });
 
    /*  ENCUESTA */
 
@@ -111,9 +193,11 @@
         // Actualizar dinámicamente el contenido de la encuesta
         var encuestaContainer = document.getElementById('encuestaContainer');
         encuestaContainer.innerHTML = `
-            <p>¡Gracias por votar! Tendremos en</p>
-            <p>cuenta tu opinión para futuros</p>
-            <p>artículos.</p>
+            <p>¡GRACIAS POR TU VOTO!</p> 
+            <P>Tu opinión es muy importante para</p>
+            <p>nosotros. ¡Sigue participando en </p>
+            <p>nuestras encuestas para ayudarnos</p>
+            <p>a mejorar nuestro contenido!</p>
         `;
     });
 });

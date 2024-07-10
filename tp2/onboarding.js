@@ -1,7 +1,7 @@
-// Código para el onboarding
 document.addEventListener('DOMContentLoaded', function() {
     const opciones = document.querySelectorAll('.opcion');
     const botonProximo = document.getElementById('boton-proximo');
+    const feedback = document.getElementById('feedback');
 
     opciones.forEach(opcion => {
         opcion.addEventListener('click', function() {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     botonProximo.addEventListener('click', function(event) {
         event.preventDefault(); // Prevenir el comportamiento por defecto del botón
         if (this.classList.contains('active')) {
-            window.location.href = 'index.html'; // Reemplaza con la URL de tu página de destino
+            feedback.classList.remove('oculto');
         }
     });
 
