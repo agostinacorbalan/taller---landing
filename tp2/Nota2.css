@@ -1,5 +1,5 @@
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
     margin: 0; padding: 0;
     background-color: #161616;
     color: white;
@@ -7,12 +7,12 @@ html{
     font-family: "Roboto Condensed", sans-serif;
 }
 
-body{
+body  {
     padding: 0; margin: 0;
 }
 
-/* HEADER */
 
+/*HEADER*/
 header {
     display: flex;
     align-items: center;
@@ -191,23 +191,24 @@ header a:hover {
 
 /* COMIENZA LA NOTA */
 
-.portada {  
+.portada {   /* Imagen de portada */
     position: relative;
+    
 }
 
 .portada img {
     width: 100%;
-    display: block;
+    display: block; 
 }
 
 .portada h1 {
     position: absolute;
-    bottom: 100px;
+    bottom: 100px; 
     left: 50%;
     transform: translateX(-50%); /* Centra el texto horizontalmente */
     color: white;
     white-space: nowrap;
-    font-size: 50px;
+    font-size: 50px; 
 }
 
 .centro{
@@ -224,9 +225,10 @@ header a:hover {
 .intermedio{
     margin-top: 15px;
     display: grid;
+    
 }
 
-.flex {
+.flex { 
     display: flex;
     color: #FFA629;
     list-style: none;
@@ -238,11 +240,11 @@ header a:hover {
 }
 
 .line {
-    height: 0.1px;
-    width: calc(100% - 28px);
+    height: 0.1px; 
+    width: calc(100% - 28px); 
     border: none;
-    background-color: #757575;
-    margin: -9px 2;
+    background-color: #757575; 
+    margin: -8px 0; 
 }
 
 .noticia h1{
@@ -282,7 +284,7 @@ header a:hover {
 }
 
 .estrella {
-    width: 20px; /* Ajusta el tamaño según tus necesidades */
+    width: 20px; 
     cursor: pointer;
 }
 
@@ -292,27 +294,26 @@ header a:hover {
     gap: 35px;
 }
 
-
 .autora{
   display: flex;
   border: 1px solid #2d2d2d;
   background-color: #1d1d1d;
   border-radius: 10px;
   padding: 20px;
-
+  
 }
 
 .autora img{
     max-width: 150px;
     max-height: 150px;
-
+  
 }
 
 .columna{ /*  noticia */
     display: grid;
     list-style: none;
-    padding: 0;
-    margin: 10px;
+    padding: 0; 
+    margin: 10px; 
     gap: 1px;
 }
 
@@ -428,8 +429,7 @@ header a:hover {
     text-decoration: none;
     color: white;
     font-size: large;
-    transition: background-color 0.3s;
-    
+    transition: background-color 0.3s;   
 }
 
 .dropdown-menu a:hover {
@@ -458,7 +458,7 @@ header a:hover {
     width: 22%; 
     max-width: 600px;
     position: relative;
-    border-radius: 8px;   
+    border-radius: 8px;
 }
 
 
@@ -516,7 +516,8 @@ header a:hover {
   width: 94%;
   background-color:  #4c4c4c3e;
   border-radius: 10px;
-  padding: 8px; 
+  padding: 8px;
+  
 }
 
 .btn {
@@ -548,10 +549,10 @@ header a:hover {
     content: '';
     position: absolute;
     right: 20px;
-    top: 353px; 
+    top: 353px; /* Ajusta esta propiedad para espaciar la línea */
     width: 88%;
-    height: 1.5px; 
-    background-color: #FFA629; 
+    height: 1.5px; /* Grosor de la línea */
+    background-color: #FFA629; /* Color de la línea */
     left: 6%;
 }
 
@@ -568,12 +569,12 @@ header a:hover {
 
 .contenido h1{
     margin-left: 30px;
-    margin-top: 20%;   
+    margin-top: 20%;
+    
 }
-
 .contenido p{
     margin-left: 30px;
-    line-height: 28px;   
+    line-height: 28px;
 }
 
 .contenido {
@@ -620,11 +621,10 @@ header a:hover {
     display: none;
 }
 
-
-/* RECOMENDADOS*/
+/* Recomendados */
 
 .Recomendados{
-margin-top: 50px;
+ margin-top: 50px;
 }
 
 .Recomendados h4{
@@ -632,12 +632,12 @@ margin-top: 50px;
 }
 
 .linea {
-    height: 0.1px;
+    height: 0.1px; 
     width: 400px;
     border: none;
-    background-color: #757575;
+    background-color: #757575; 
     margin-top: -40px;
-    position: absolute;
+    position: absolute; 
 }
 
 .textrecomendados{
@@ -645,10 +645,12 @@ margin-top: 50px;
     margin: 50px;
     line-height: 0;
     margin-left: 5px;
+   
 }
 
 .titulo{
-    line-height: 1.5;
+    line-height: 1.5; 
+    
     margin-top: -50px;
 }
 
@@ -662,31 +664,27 @@ margin-top: 50px;
 .fecha{
     font-size: 12px;
 }
+   
 
 .tepuedegustar{
     display: flex;
+   
 }
-
+ 
 .tepuedegustar img {
-    max-width: 210px;
+    max-width: 210px; 
    max-height: 110px;
 }
 
-.tepuedegustar:hover{
-  transition: color 0.3s ease;
-  color: #85ABC7;
-}
-
-
-/* ENCUESTA */
+/* encuesta */
 
 .encuesta{
     background-color: #1d1d1d;
     border: 1px solid #2d2d2d;
     color: white;
     padding: 20px;
-    padding-left: 30px;
-    border-radius: 10px;
+    padding-left: 30px; 
+                                 
 }
 
 .encuesta li{
@@ -698,19 +696,23 @@ margin-top: 50px;
     position: relative; /* Necesario para posicionar el pseudo-elemento correctamente */
     padding-left: 15px; /* Espacio para la línea */
 }
-
+  
 .tituloencuesta::before {
     content: '';
     position: absolute;
-    left: 0; 
+    left: 0; /* Alinea la línea con el borde izquierdo del contenedor */
     top: 0;
     bottom: 0;
-    width: 2px; 
-    background-color: #FFA629; 
+    width: 2px; /* Ancho de la línea */
+    background-color: #FFA629; /* Color de la línea */
 }
 
 .encuesta p{
     font-size: 20px;
+}
+
+.encuesta img:hover{
+    background-color: #e68c0d; 
 }
 
 .botonvotar{
@@ -720,27 +722,28 @@ margin-top: 50px;
     padding: 0.3em;
     font-size: 1em;
     color: white;
-    margin: 1em 0;
+    margin: 1em 0; 
     border-radius: 1em;
     text-align: center;
-
+    
     margin-top: 0.3em;
     text-decoration: none;
-
+    
     transition: background-color 0.3s;
     background:#FFA629;
     cursor: pointer;
 }
 
 .botonvotar:hover {
-    background: #e68c0d;
-}
-
-.encuesta img:hover{
     background-color: #e68c0d; 
 }
 
-/* FOOTER */
+
+
+
+
+/* footer */
+
 
 footer {
     background-color: #0B0B0B;
@@ -752,10 +755,10 @@ footer {
 
 .ordenarfooter {
     display: flex;
-    gap: 160px;
+    gap: 160px; 
     flex-wrap: wrap; /* Permite que los elementos se envuelvan si el espacio es insuficiente */
     align-items: center;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     margin-bottom: 50px;
 }
 
@@ -784,14 +787,13 @@ align-items: center;
 
 .finalfooter {
     background-color: #5F5F5F;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5); 
     text-align: center;
     padding: 0;
     width: 100%;
-    position: absolute;
+    position: absolute; 
     bottom: 0;
-    left: 0;
+    left: 0; 
     box-sizing: border-box;
-
+   
 }
-

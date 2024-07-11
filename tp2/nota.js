@@ -50,7 +50,7 @@
     };
    
 /* BOTON LISTA DE SEGUIMIENTO */
-/* BOTON LISTA DE SEGUIMIENTO */
+
 
 // JavaScript para mostrar/ocultar el menú desplegable
 const textodelista = document.getElementById('textodelista');
@@ -59,6 +59,9 @@ const dropdownMenu = document.getElementById('dropdownMenu');
 textodelista.addEventListener('click', function() {
     dropdownMenu.style.display = dropdownMenu.style.display === 'none' ? 'block' : 'none';
 });
+
+
+
 
 // Mostrar popup
 function showPopup() {
@@ -71,6 +74,9 @@ function closePopup() {
     var popup = document.getElementById('popup');
     popup.style.display = 'none';
 }
+
+
+
 
 // Procesar formulario de nueva lista
 document.getElementById('newListForm').addEventListener('submit', function(event) {
@@ -105,6 +111,10 @@ function mostrarFeedback() {
     }, 4000);
 }
 
+
+
+
+
 // Función para cambiar el estilo y texto del botón
 function cambiarBoton() {
     var addToListButton = document.getElementById('addToListButton');
@@ -133,42 +143,9 @@ function toggleButton() {
 
 
 
-   // document.addEventListener('DOMContentLoaded', function() {
-    //     var listaSeguimiento = document.getElementById('listadeseguimiento');
-    //     var textoLista = document.getElementById('textodelista');
-    //     var logoLista = document.getElementById('logoLista');
-    
-    //     listaSeguimiento.addEventListener('click', function() {
-    //         listaSeguimiento.classList.toggle('active');
-    //         if (listaSeguimiento.classList.contains('active')) {
-    //             textoLista.innerHTML = '<h5>¡SE HA AÑADIDO A LA LISTA CON ÉXITO!</h5>';
-    //             logoLista.src = 'imagen/tick.png'; // Cambia la imagen
-    //             localStorage.setItem('listaSeguimientoActiva', 'true');
-    //             listaSeguimiento.style.backgroundColor = '#3E3E3E';
-    //         } else {
-    //             textoLista.innerHTML = '<h5>AÑADIR A LA LISTA DE SEGUIMIENTO</h5>';
-    //             logoLista.src = 'imagen/listalogo.png'; // Cambia la imagen de vuelta al logo original
-    //             localStorage.setItem('listaSeguimientoActiva', 'false');
-    //             listaSeguimiento.style.backgroundColor = '#FFA629'; 
-    //         }
-    //     }); 
-    
-        // Mantener el estado al recargar la página
-    //     var listaSeguimientoActiva = localStorage.getItem('listaSeguimientoActiva');
-    //     if (listaSeguimientoActiva === 'true') {
-    //         listaSeguimiento.classList.add('active');
-    //         textoLista.innerHTML = '<h5>¡SE HA AÑADIDO A LA LISTA CON ÉXITO!';
-    //         logoLista.src = 'imagen/tick.png'; // Cambia la imagen
-    //         listaSeguimiento.style.backgroundColor = '#3E3E3E';
-    //     } else {
-    //         listaSeguimiento.classList.remove('active');
-    //         textoLista.innerHTML = '<h5>AÑADIR A LA LISTA DE SEGUIMIENTO</h5>';
-    //         logoLista.src = 'imagen/listalogo.png'; // Cambia la imagen de vuelta al logo original
-    //         listaSeguimiento.style.backgroundColor = '#FFA629'; 
-    //     }
-    // });
 
-   /*  ENCUESTA */
+
+/*  ENCUESTA */
 
    document.addEventListener('DOMContentLoaded', function() {
     // Selección de opciones de la encuesta

@@ -14,72 +14,83 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-      <header>
-         <img class="logo" src="imagen/logo.png" alt="Logo de La Cosa Cine">
-         <nav class="navbar">
-             <ul class="nav-barra">
-                 <li class="activa"><a href="./index.html" >Inicio</a></li>
-                 <li class="dropdown">
-                     <a href="#" class="dropbtn">Proyectos</a>
-                     <div class="dropdown-content">
-                         <a href="#">Cine</a>
-                         <a href="#">TV</a>
-                         <a href="#">Comics</a>
-                         <a href="#">Video Juegos</a>
-                     </div>
-                 </li>
-                 <li class="dropdown">
-                     <a href="#" class="dropbtn">Críticas</a>
-                     <div class="dropdown-content">
-                         <a href="#">Rodaje</a>
-                         <a href="#">Trailers</a>
-                         <a href="#">Lanzamientos</a>
-                     </div>
-                 </li>
-                 <li class="dropdown">
-                     <a href="#" class="dropbtn">Dossier</a>
-                     <div class="dropdown-content">
-                         <a href="#">Marvel</a>
-                         <a href="#">Harry Potter</a>
-                         <a href="#">Mario Bros</a>
-                         <a href="#">Star Wars</a>
-                     </div>
-                 </li>
-                 <li class="dropdown">
-                     <a href="#" class="dropbtn">Extras</a>
-                     <div class="dropdown-content">
-                         <a href="#">Curiosidades</a>
-                         <a href="#">Entrevistas</a>
-                         <a href="#">Making-of</a>
-                         <a href="#">Otros</a>
-                     </div>
-                 </li>
-             </ul>
-         </nav>
-         <ul class="nav-otros">
+    <header>
+        <img class="logo" src="imagen/logo.png" alt="Logo de La Cosa Cine">
+        <nav>
+            <ul class="cont-nav">
+                <li><a href="./index.html" class="activa">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn ">Noticias</a>
+                    <img src="imagen/icon-flecha.png" alt="">
+                    <div class="dropdown-content">
+                        <a href="#">Cine</a>
+                        <a href="#">TV</a>
+                        <a href="#">Comics</a>
+                        <a href="#">Videojuegos</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn ">Críticas</a>
+                    <img src="imagen/icon-flecha.png" alt="">
+                    <div class="dropdown-content">
+                        <a href="#">Rodaje</a>
+                        <a href="#">Trailers</a>
+                        <a href="#">Lanzamientos</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn ">Dossier</a>
+                    <img src="imagen/icon-flecha.png" alt="">
+                    <div class="dropdown-content">
+                        <a href="#">Marvel</a>
+                        <a href="#">Harry Potter</a>
+                        <a href="#">Star Wars</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn ">Entrevistas</a>
+                    <img src="imagen/icon-flecha.png" alt="">
+                    <div class="dropdown-content">
+                        <a href="#">Directores</a>
+                        <a href="#">Actores</a>
+                        <a href="#">Guionistas</a>
+                        <a href="#">Productores</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <ul class="nav-otros">
             <li>
-               <div class="barra-buscar">
-                  <img src="imagen/icon-buscar.png" alt="">
-                  <input type="text" placeholder="Buscar en La Cosa Cine">
-               </div>
+                <div class="barra-buscar">
+                    <img src="imagen/icon-buscar.png" alt="">
+                    <input type="text" placeholder="Buscar en La Cosa Cine">
+                </div>
             </li>
+            
             <li>
-               <div class="lista-seguimiento">
-                  <img src="imagen/icon-seguimiento.png" alt="">
-                  <a href="#">Lista de seguimiento</a>
-               </div>
-            </li>
-            <li class="dropdown">
-               <img src="imagen/icon-user.png" alt="">
-               <a href="#" class="dropbtn">LARA</a>
-               <div class="dropdown-content">
-                   <a href="#">Mi perfil</a>
-                   <a href="#">Ajustes</a>
-                   <a href="./form.html">Cerrar sesión</a>
-               </div>
-           </li>
-         </ul>
-     </header>   
+                <div class="lista-seguimiento">
+                    <a href="./form.html">
+                        <img src="imagen/logolistaheader.png" alt="" class="imagen-normal">
+                        <img src="imagen/icon-seguimiento-hover.png" alt="" class="imagen-hover">
+                        <p>Lista de seguimiento</p>
+                    </a>
+                </div>            
+            </li>                      
+                   
+            <li class="dropdown user-person">
+                <img src="imagen/icon-user.png" alt="" class="imagen-normal">
+                <img src="imagen/icon-user-hover.png" alt="" class="imagen-hover">
+                <a href="#" class="dropbtn">Lara</a>
+                <img src="imagen/icon-flecha.png" alt="">
+                <div class="dropdown-content">
+                    <a href="#">Mi perfil</a>
+                    <a href="#">Ajustes</a>
+                    <a href="#">Cerrar sesión</a>
+                </div>
+            </li>                        
+                       
+        </ul>
+    </header>    
 
     <section class="portada">
        <img src="imagen/mazerunner.png" alt="portada"> 
@@ -179,8 +190,23 @@
                             <p class="condiciones">Al continuar, aceptas las <span class="destacado">Condiciones de uso y el Aviso de privacidad</span> de La Cosa Cine.</p>
                         </form>
                     </div>
-                </div>    
+                    
+                </div>  
+                  
             </div>
+            <section class="feedback oculto" id="feedback">
+                <div class="fondo-fb">
+                   <div class="contenido">
+                      <h1>¡PERFECTO!</h1>
+                      <p>
+                        ¡Se guardó tu lista con éxito!<br>
+                        Si queres editarla, entra al <br>
+                        apartado de “lista de seguimiento”.
+                     </p>
+                      <img class="realizado" src="./imagen/realizado.png" alt="">
+                    </div>
+               </div>
+            </section>
         
            <script src="nota.js"></script>
           <div class="Recomendados">
@@ -235,7 +261,7 @@
                    <ul id="opcionesEncuesta">
                        <li><img src="imagen/ellipsevacia.png" alt="GUIONISTAS" class="opcionEncuesta"> GUIONISTAS</li>
                        <li><img src="imagen/ellipsevacia.png" alt="ACTORES" class="opcionEncuesta"> ACTORES</li>
-                       <li><img src="imagen/ellipsevacia.png" alt="PRODUCTORES" class="opcionEncuesta"> DIRECTORES</li>
+                       <li><img src="imagen/ellipsevacia.png" alt="PRODUCTORES" class="opcionEncuesta"> PRODUCTORES</li>
                        <li><img src="imagen/ellipsevacia.png" alt="DIRECTORES" class="opcionEncuesta"> DIRECTORES</li>
                    </ul>
                    <h5 class="botonvotar">VOTAR</h5>
@@ -244,16 +270,6 @@
         </nav>
     </section>
 
-    <section class="feedback oculto" id="feedback">
-        <div class="fondo-fb">
-           <div class="contenido">
-              <h1>¡PERFECTO!</h1>
-              <p>¡Se guardó tu lista con éxito!</p>
-              <p> Si queres editarla, entra al apartado de “lista de seguimiento”.</p>
-              <img class="realizado" src="./imagen/realizado.png" alt="">
-            </div>
-       </div>
-      </section>
 
     <footer>
         <div class="ordenarfooter">
