@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <title>Form</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+           <img class="logo" src="imagen/logo.png" alt="Logo de La Cosa Cine">
+           <p>¿Eres miembro?<a href="#" class="destacado"> Iniciar sesión</a></p>
+           </nav>
+        </header> 
+
+    <form id="formulario">
+     <section class="izquierdo">
+        <div class="contenedor">
+         <h2>Beneficios de tener una cuenta registrada</h2>
+         <div class="beneficios">
+         <h3>Recomendaciones personalizadas:</h3>
+         <p>Rastrea tus gustos y recibe recomendaciones personalizadas en la sección especial "Para Ti" en la página principal.</p>
+         <h3>Lista de seguimiento y Dossiers:</h3>
+         <p>Crea y organiza listas con tus películas, directores o actores favoritos. Con los dossiers,  podes acceder a contenido detallado sobre tus géneros favoritos, incluyendo críticas, análisis y entrevistas.</p>
+         <h3>Acceso ampliado a publicaciones:</h3>
+         <p>Los usuarios registrados pueden disfrutar de un acceso ilimitado a nuestras publicaciones.</p>
+         <h3>Experiencia personalizada:</h3>
+         <p>Disfruta de una experiencia única y personalizada que mejora continuamente a medida que interactúas con la plataforma.</p>
+        </div>
+       </div>
+     </section>
+
+     <section class="derecho">
+        <div class="contenedor">
+            <div class="contenedor-camposdelform">
+                <div class="campos-de-texto"> <!-- Todos los campos de texto -->
+                   <div class="form-campo"> <!-- Campo nombre -->
+                      <label for="nombre">Nombre<span class="obligatorio">*</span></label>
+                      <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required>
+                   </div>
+                   <div class="form-campo"> <!-- Campo contraseña -->
+                    <label for="contraseña">Contraseña<span class="obligatorio">*</span></label>
+                    <input type="text" name="contraseña" id="contraseña" placeholder="xxxxxxxx" required>
+                 </div>
+                 <div class="form-campo"> <!-- Campo repetir -->
+                    <label for="repetir">Repite contraseña<span class="obligatorio">*</span></label>
+                    <input type="text" name="repetir" id="repetir" placeholder="xxxxxxxx" required>
+                 </div>
+                 <div class="form-campo"> <!-- Campo correo -->
+                    <label for="email">Email<span class="obligatorio">*</span></label>
+                    <input type="email" name="email" id="email" placeholder="tunombre@gmail.com" required>
+                 </div>
+                </div>
+            </div>
+            <div class="cont-boton">
+                <input type="submit" id="boton-enviar" value="REGISTRARSE" class="enter" disabled> 
+             </div>
+
+             <section class="redes-registro">
+             <button id="google-button" class="google-button">
+               <img src="./imagen/google.png" alt="Google" class="google">
+               REGISTRARSE CON GOOGLE
+             </button>
+
+             <button id="facebook-button" class="facebook-button">
+               <img src="./imagen/facebook-logo.png" alt="Facebook" class="facebook">
+               REGISTRARSE CON FACEBOOK
+             </button>
+            </section>
+             <p class="condiciones">Al continuar, aceptas las <span class="destacado">Condiciones de uso y el Aviso de privacidad</span> de La Cosa Cine.</p>
+        </div>
+     </section>
+    </form>
+
+    <footer>
+        <p>©La Cosa Cine 2024. Todos los derechos reservados.</p>
+      </footer>
+  
+      <script src="./form.js"></script>
+</body>
+</html>

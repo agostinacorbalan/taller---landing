@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="./onboarding.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>On Boarding</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img class="logo" src="imagen/logo.png" alt="Logo de La Cosa Cine">
+        </nav>
+    </header> 
+
+    <main class="contenedor">
+        <section class="izquierdo">
+            <img src="./imagen/fondo-form2.png" alt="onboarding">
+        </section>
+
+        <section class="derecho">
+            <div class="contenido-derecho">
+                <h1>¿EN QUÉ ESTÁS INTERESADO?</h1>
+                <p class="subtitulo">Elija sus intereses favoritos para recomendarle artículos sobre ellos.</p>
+
+                <div class="categorias">
+                    <div class="categoria-noticias">
+                        <h3>GENEROS DE PELICULAS Y SERIES</h3>
+                        <div class="opciones">
+                            <div class="opcion" data-categoria="Ciencia Ficcion">Ciencia ficción</div>
+                            <div class="opcion" data-categoria="Aventura">Aventura</div>
+                            <div class="opcion" data-categoria="Comedia">Comedia</div>
+                            <div class="opcion" data-categoria="Terror">Terror</div>
+                            <div class="opcion" data-categoria="Romance">Romance</div>
+                            <div class="opcion" data-categoria="Documental">Documental</div>
+                            <div class="opcion" data-categoria="Animacion">Animación</div>
+                        </div>
+                    </div>
+
+                    <div class="categoria-cine">
+                        <h3>NOTICIAS</h3>
+                        <div class="opciones">
+                            <div class="opcion" data-categoria="Estreno">Estreno y Lanzamiento</div>
+                            <div class="opcion" data-categoria="Trailers">Trailers y Avances</div>
+                            <div class="opcion" data-categoria="Criticas">Criticas y Reseñas</div>
+                        </div>
+                    </div>
+
+                    <div class="categoria-comics">
+                        <h3>CULTURA POP</h3>
+                        <div class="opciones">
+                            <div class="opcion" data-categoria="Comics">Comics y Novelas Graficas</div>
+                            <div class="opcion" data-categoria="Conexiones">Conexiones con Videojuegos</div>
+                            <div class="opcion" data-categoria="Adaptaciones">Adapctaciones de Libros</div>
+                        </div>
+                    </div>
+
+                    <div class="categoria-comics">
+                        <h3>ENTREVISTAS</h3>
+                        <div class="opciones">
+                            <div class="opcion" data-categoria="Actores">Actores</div>
+                            <div class="opcion" data-categoria="Directores">Directores</div>
+                            <div class="opcion" data-categoria="Productores">Productores</div>
+                            <div class="opcion" data-categoria="Guionistas">Guionistas</div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="boton-proximo" class="proximo" disabled>PRÓXIMO</button>
+            </div>
+        </section>
+    </main>
+
+    <section class="feedback oculto" id="feedback">
+        <div class="fondo-fb">
+           <div class="contenido">
+              <img class="check" src="./imagen/check.png" alt="">
+              <h1>¡BIEN HECHO!</h1>
+              <p>¡Tus preferencias han sido guardadas correctamente!</p>
+              <p>Ahora podes explorar el contenido según tus intereses y sin limites.</p>
+              <p><a href="./index.html" class="volver">IR AL INICIO</a></p>
+           </div>
+       </div>
+      </section>
+
+    <footer>
+      <p>©La Cosa Cine 2024. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="onboarding.js"></script>
+</body>
+</html>
