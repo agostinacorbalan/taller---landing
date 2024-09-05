@@ -1,0 +1,143 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('image/fondo2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 90%; 
+    height: calc(100vw*(1117 / 1728));
+}
+
+h1, h3{
+    font-family: "Shadows Into Light", cursive;
+    font-size: 33px;
+}
+
+h4{
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    color: gray;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 28px;
+}
+
+main.contenedor {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 120vh;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.izquierdo{
+    padding: 10px;
+    margin-right: 2%;
+    box-sizing: border-box;
+}
+
+.contenedor-izquierdo{
+  text-align: center;
+}
+
+h1{
+margin-bottom: 10px;
+}
+
+h3{
+    margin-top: 0;
+    margin-bottom: 5px
+}
+
+.izquierdo img {
+    width: 87%;
+    margin-top: 5px;
+}
+
+.derecho {
+    width: 45%;
+    background-color: #222222;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.contenedor-derecho{
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.titulo-d{
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 40px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid gray;
+    background-color: #000;
+    color:white;
+    cursor: pointer;
+}
+
+.g, .tam , .tr {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+button.selected {
+    border: 3px solid #61009E;
+    background-color: black;
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+#generateButton {
+    background-color: #61009E;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#generateButton:disabled {
+    background-color: #555; /* Gris cuando está deshabilitado */
+}
+
+#regenerateButton button {
+    background-color: #000; 
+    color: white;
+    font-size: 18px;
+    border: 3px solid #61009E;
+    border-radius: 15px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
