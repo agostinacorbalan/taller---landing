@@ -36,39 +36,86 @@
 </section>
 
 <section class="derecho">
-    <div class="contenedor-derecho">
-        <h1 class="titulo-d">¡CREA TU SONIDO!</h1>
-        <h4>Selecciona dos o más instrumentos...</h4>
+ <div class="contenedor-derecho">
+     <div class="arriba">
+    <img src="./image/notas.png" alt="" class="notas">
+    <button type="button" class="boton-cancelar" onclick="irAPaginaInicio()"><img src="./image/cancelar.png" alt=""></button>
+   </div>
+        <h1 class="titulo-d" id="crearTitulo">¡CREA TU SONIDO!</h1>
+        <h4 id="subtitulo">Selecciona dos o más instrumentos...</h4>
+
+        <!-- "Momento de escuchar" -->
+       <h1 class="titulo-d" id="escucharTitulo" style="display: none;">¡ESCUCHA TU SONIDO!</h1>
 
       <!-- selección de instrumentos -->
       <div id="instrumentButtons">
         <button id="guitarraButton" onclick="toggleInstrument('guitarra')">
         <img src="./image/guitarra.png" alt="guitarra" class="g">
-        Guitarra</button>
+        <p class="N">Guitarra
+        </button>
+      
         <button id="tamborButton" onclick="toggleInstrument('tambor')">
         <img src="./image/tambor.png" alt="tambor" class="tam">
-        Tambor</button>
+        <p class="N">Tambor</p>
+       </button>
         <button id="trompetaButton" onclick="toggleInstrument('trompeta')">
         <img src="./image/trompeta.png" alt="trompeta" class="tr">
-        Trompeta</button>
+        <p class="N">Trompeta</p>
+      </button>
+      </div>
+
+     <!-- botón para generar la canción -->
+     <button id="generateButton" onclick="generateSong()" disabled>GENERAR</button>
+
+    <!-- reproducir la canción generada  -->
+   <div class="audio-player" style="display: none;">
+   <div class="reproductor">
+
+    <!-- imagen del álbum -->
+    <div id="albumArt">
+      <img id="albumImage" src="" alt="Album Art" />
     </div>
 
-    <!-- botón para generar la canción -->
-    <button id="generateButton" onclick="generateSong()" disabled>GENERAR</button>
+    <!-- reproductor de audio  -->
+    <div class="info-contenedor">
+      <h2 class="song-title">Nombre de la canción</h2>
 
-    <!-- reproducir la canción generada -->
-    <audio id="songPlayer" controls style="display: none;"></audio>
+      <div class="instrumentos">
+        <span class="instrumento">Guitarra</span>
+        <span class="instrumento">Trompeta</span>
+        <span class="instrumento">Tambor</span>
+      </div>
 
-    <!-- volver a generar la canción -->
-    <div id="regenerateButton" style="display: none;">
+      <div class="custom-audio-player">
+        <button id="playPauseButton" onclick="togglePlayPause()">Play</button>
+
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+          </div>
+          <span id="totalTime">00:30 seg</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- volver a generar la canción -->
+      <div id="regenerateButton" style="display: none;">
         <button onclick="resetSelection()">GENERAR DE NUEVO</button>
+      </div>
     </div>
- 
-     <script src="pizarron.js"></script>
+
+      <img src="./image/ondas.gif" alt="gif" id="gif">
+     </section>
+
     </div>
+
+    <script src="pizarron.js"></script>
 
 </section>
 </main>
-    
+<audio id="songPlayer" style="display:none;"></audio>
 </body>
 </html>
