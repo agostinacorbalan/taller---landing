@@ -18,6 +18,10 @@ function toggleInstrument(instrument) {
     document.getElementById('generateButton').disabled = selectedInstruments.length < 2;
 }
 
+function irAPaginaInicio() {
+    window.location.href = 'salon.html'; // Redirige a la página salon.html
+ }
+ 
 // Función para generar la canción
 function generateSong() {
 
