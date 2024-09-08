@@ -1,0 +1,227 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(image/fondo.jpg);
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+h1,
+p {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.remarcado {
+    text-decoration: underline;
+    color: #FF00D6;
+}
+
+.boton {
+    width: 10%;
+    position: absolute;
+}
+
+.boton img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.carrusel {
+    margin-top: 2%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.carrusel-contenedor {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    width: 70%;
+}
+
+.diapositivas-contenedor {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    width: 90%;
+}
+
+.diapositiva {
+    flex: 1 0 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diapositiva img {
+    width: 100%;
+    height: auto;
+}
+
+.anterior {
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.siguiente {
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.apagado {
+    width: 13%;
+    padding-bottom: 0.5%;
+    position: relative;
+}
+
+.encendido {
+    width: 13%;
+    padding-bottom: 0.5%;
+    position: relative;
+}
+
+.piano-muestra {
+    display: flex;
+    width: 74%;
+    padding: 1.5% 0 0 2%;
+    margin: 0 12%;
+    bottom: 0;
+    background-image: url(image/fondoPiano.png);
+    background-size: cover;
+    /* Hace que la imagen ocupe todo el espacio del contenedor */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+
+}
+
+.mensajeConsola {
+    margin: 2% 0 2% 25%;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.ia {
+    display: flex;
+    position: absolute;
+    margin-top: 30%;
+    z-index: 3;
+}
+
+.image-container {
+    display: flex;
+    gap: 22%;
+    /* Espacio entre las imágenes */
+}
+
+.image-container img {
+    width: 40%;
+    display: block;
+    /* Asegura que no haya espacio extra alrededor de las imágenes */
+}
+
+
+.piano-contenedor {
+    background-image: url(image/fondoPianoCompleto.png);
+    width: 57%;
+    margin: 5% 22%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2%;
+}
+
+.parte-superior {
+    display: flex;
+
+}
+
+.piano-contenedor .apagado {
+    width: 18%;
+    padding: 2% 0 0 2%;
+}
+
+.cont-mensajeConsola {
+    margin: 3% 4%;
+    width: 65vh;
+    justify-content: center;
+    align-items: center;
+    padding: 6% 0 6% 0;
+    display: flex;
+}
+
+.cont-mensajeConsola .mensajeConsola {
+    margin: 3% 0 0 2%;
+    font-size: 20px;
+    display: flex;
+}
+
+.piano {
+    display: flex;
+    width: 70vh;
+    margin: 2% 5% 12% 5%;
+    padding-bottom: 3%;
+}
+
+.tecla-contenedor {
+    position: relative;
+    display: flex;
+}
+
+.tecla.blanca {
+    font-family: 'Montserrat', sans-serif;
+    width: 15vh;
+    height: 42vh;
+    border-left: 2px solid #000;
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.tecla.negra {
+    width: 5vh;
+    height: 25vh;
+    background-color: black;
+    position: absolute;
+    left: 85%;
+    top: 0;
+    z-index: 2;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.tecla.active {
+    background-color: yellow;
+}
+
+.indicador-Piano {
+    display: inline-block;
+    text-decoration: none;
+    position: absolute;
+    top: 94%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+}
+
+.indicador-Piano img {
+    width: 150px;
+    height: 120px;
+}
