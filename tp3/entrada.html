@@ -20,6 +20,14 @@
     <title>Entrada</title>
 
     <style>
+
+      @font-face {
+      font-family: 'Fuente'; /* Nombre que le darás a la fuente */
+      src: url('./image/Fuente.ttf') format('truetype'); /* Ruta de la fuente */
+      font-weight: normal; /* Puedes especificar otros estilos, como bold */
+      font-style: normal;  /* O también italic, si tiene variante */
+      } 
+
         body {
             margin: 0;
             padding: 0;
@@ -33,68 +41,67 @@
             height: calc(80vw*(1117 / 1728));
         }
 
-        h2 {
-            font-family: "Shadows Into Light", cursive;
-            ;
-            color: white;
-            font-size: 52px;
-            font-weight: 300;
-            margin-left: 62%;
-            margin-top: 15%;
+         h2 {
+            font-family: 'Fuente', sans-serif;
+            color: rgba(255, 255, 255, 0.814);
+            font-size: 47px;
+            font-weight: 250;
+            margin-left: 61%;
+            margin-top: 8%;
             margin-bottom: 0;
         }
 
         h3 {
-            font-family: "Shadows Into Light", cursive;
-            ;
+            font-family: 'Fuente', sans-serif;
             color: white;
-            font-size: 50px;
+            font-size: 48px;
             text-align: center;
-            margin-left: 62%;
-            margin-top: 3px;
+            margin-left: 52%;
+            margin-top: 10px;
             margin-bottom: 0;
         }
 
         p {
-            font-family: "Amatic SC", sans-serif;
+            font-family: 'Fuente', sans-serif;
             color: white;
-            font-size: 40px;
-            font-weight: bold;
-            margin-top: 20px;
-            margin-left: 61.5%;
-        }
+            font-size: 25px;
+            font-weight: medium;
+            margin-top: 1.5%;
+            margin-left: 61%;
+        } 
 
         #notas,
-        #subtitulo {
+        #titulo {
             display: inline-block;
-        }
+        } 
 
         #notas {
-            margin-top: 22px;
-        }
+            margin-left: 40px;
+        } 
 
         .indicador {
             display: inline-block;
             text-decoration: none;
             position: absolute;
-            top: 116%;
+            top: 98%;
             left: 49.5%;
             transform: translate(-50%, -50%);
-        }
+        } 
     </style>
 </head>
 
 <body>
 
     <section class="cartel">
-        <h2>Clase de hoy:</h2>
-        <h3 id="subtitulo">¡Nuevas maneras de <br>
-            hacer musica!</h3>
+        <h2 id="titulo">Clase de hoy:</h2>
         <img src="./image/notas2.png" alt="" id="notas">
-        <p id="descripcion">En solo una breve clase, potencia tu <br>
-            creatividad y habilidades compositivas. <br>
-            Aprovecha esta oportunidad para explorar <br>
-            nuevas ideas y llevar tu música al <br>
+        <h3 id="subtitulo">¡Nuevas maneras <br>
+            de hacer musica!</h3>
+        <p id="descripcion">En solo una breve clase, potencia<br>
+            tu creatividad y habilidades<br> 
+            compositivas. Aprovecha esta<br>
+            oportunidad para explorar nuevas<br> 
+            ideas y llevar tu música al <br>
             siguiente nivel.</p>
     </section>
 

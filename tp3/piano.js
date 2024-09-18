@@ -6,7 +6,6 @@ const secuenciaDeNotas = [
     "sol", "sol", "fa", "fa", "mi", "mi", "re"*/
 ];
 
-
 // Cantidad de notas acertadas para cada nivel
 const ia1 = Math.ceil(secuenciaDeNotas.length / 2); // Primer tercio
 const ia2 = ia1 * 2 - 1; // Segundo tercio
@@ -84,7 +83,6 @@ function melodía() {
     }, 500);
 }
 
-
 //Verifica si las teclas presionadas son las correctas
 function controlDeTeclaPresionada(nota) {
     const notaCorrecta = secuenciaDeNotas[notaActual];
@@ -142,7 +140,6 @@ function teclaPresionada(event) {
     }
 }
 
-
 // Selecciona todos los elementos que tienen la clase "diapositiva"
 const diapositivas = document.querySelectorAll('.diapositiva');
 const mensajeDeConsola = document.querySelectorAll('.mensajeConsola');
@@ -161,7 +158,6 @@ const instrucciones = document.querySelector('.carrusel');
 const piano = document.querySelector('.piano-contenedor');
 // Carga la botonera piano
 const pianoMuestra = document.querySelector('.piano-muestra');
-
 
 // Controlar la imagen que muestra actual
 let indiceActual = 0;
@@ -225,6 +221,5 @@ function cancelar() {
         // Redirigir a la página salon.html
         window.location.href = "salon.html";
 }
-
 
 mostrarDiapositiva(indiceActual);
